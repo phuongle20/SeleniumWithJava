@@ -11,9 +11,9 @@ public ElementsPage(WebDriver dr) {
 	}
 
 public TextBoxPage clickTextBoxMenu() {
-	TextBoxPage textBoxPage = new TextBoxPage();
+	
 	driver.findElement(By.xpath("//span[text()='Text Box']")).click();
-	return textBoxPage;
+	return new TextBoxPage(driver);
 	
 }
 }
