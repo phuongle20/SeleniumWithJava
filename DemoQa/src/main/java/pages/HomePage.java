@@ -12,7 +12,7 @@ public HomePage(WebDriver dr) {
 	}
 
 public ElementsPage clickElements () {
-	ElementsPage result = new ElementsPage();
+	ElementsPage result = new ElementsPage(driver);
 	driver.findElement(By.xpath("//h5[text()='Elements']")).click();
 	return result;
 	
